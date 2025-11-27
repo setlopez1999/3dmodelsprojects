@@ -3,14 +3,8 @@
 export default function Titulo(props) {
     const {titulo} = props;
     return (
-        //con borde primario y tamaño mitad de la pantalla
         <div 
-        id='titulo content'
-        className=""
-        style={{
-            borderStyle:'solid',
-            boxSizing: 'border-box',
-        }}>
+        id='titulo'>
             {titulo? 
             <h1 className="text-center mb-0"
             style={{

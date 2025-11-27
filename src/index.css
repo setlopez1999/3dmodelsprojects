@@ -1,12 +1,54 @@
+:root {
+  /* COLORES BASE (tema claro) */
+  --color-bg: #eaf5ff;
+  --color-text: #292a30;
+  --color-primary: #0d6efd;
+  --color-card: #f7f7f7;
+  --color-border: #e2e2e2;
+
+  /* TIPOGRAFÍA */
+  --font-main: "Inter", sans-serif;
+
+  /* ESPACIADOS */
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 32px;
+
+  /* EFECTOS */
+  --transition: 0.5s;
+}
+
+/* TEMA OSCURO */
+[data-theme="dark"] {
+  --color-bg: #292a30;
+  --color-text: #eaeaea;
+  --color-primary: #4dabf7;
+  --color-card: #1a1a1a;
+  --color-border: #333;
+}
+
+
+
 /* index.css */
 html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: var(--color-bg);
+}
+body{
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+
 }
 
 #root {
   height: 100%;
   width: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  transition: var(--transition);
 }
